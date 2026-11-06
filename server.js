@@ -8,3 +8,8 @@ const SECRET_KEY = process.env.SECRET_KEY;
 
 const app = express();
 app.use(express.json());
+
+app.post("/login", (req, res) => {
+  const { username, password } = req.body;
+  const usuario = usuarios.find();
+});
